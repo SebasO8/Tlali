@@ -1,0 +1,91 @@
+.Section{
+  width: 100%;
+  height: 100%;
+  padding-top: 3.125rem; 
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.Container{
+  padding: 0rem calc((100vw - 1300px) / 2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 800px;
+}
+
+.ColumnLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.4;
+  padding: 1rem 2rem;
+  order: 1;
+}
+
+
+.ColumnLeft2{
+  padding: 1rem 2rem;
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ColumnRigth{
+  padding: 1rem 2rem;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ColumnRigth2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.4;
+  padding: 1rem 2rem;
+  order: 2;
+}
+
+.link{
+  text-decoration: none;
+}
+
+h1{
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 6vw, 2rem);
+}
+
+p{
+  margin-bottom: 2rem;
+}
+
+img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media screen and (max-width: 768px){
+  .Container{
+    grid-template-columns: 1fr;
+  }
+
+  .ColumnLeft{
+    order: 2;
+  }
+  .ColumnRigth{
+    order: 1;
+  }
+
+  img{
+    width: 90%;
+    height: 90%;
+  }
+}

@@ -1,0 +1,124 @@
+.Nav2{ 
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  z-index:100;
+  position:fixed;
+  width:100%;
+  background: #CD853F;
+}
+
+.Nav{ 
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  z-index:100;
+  position:fixed;
+  width:100%;
+  background: transparent;
+}
+
+.Logo{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.MenuBars{
+  display: none;
+}
+
+.sectionShoppingCartRes{
+  display: none;
+}
+
+.NavMenu{
+  display: flex;
+  align-items: center;
+  margin-right: -48px;
+}
+
+.NavMenuLinks{
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.NavBtn{
+  display:flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.sectionShoppingCart{
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  height: 45px;
+  width: 35px;
+}
+
+.productCart{
+  position:absolute;
+  top:0;
+  right: 0;
+  background: red;
+  padding: 3px 5px;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.shoppingCart{
+  width:30px;
+  height: 30px;
+  color:#fff;
+}
+
+
+@media screen and (max-width: 768px){
+  .MenuBars{
+    display: block;
+    background-image: url('../../images/bars.svg');
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%, 25%); 
+  }
+  .sectionShoppingCartRes{
+    display: inline-block;
+    margin-right: 60px;
+  }
+  .sectionShoppingCartRes .productCart{
+    
+    top:5px;
+    right: 70px;
+    color: #fff;
+  }
+  .NavMenu{
+    display: none;
+  }
+  .NavBtn{
+    display: none;
+  }
+}
