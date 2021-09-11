@@ -4,6 +4,7 @@ import { menuData } from '../../data/MenuData'
 import  Button  from '../Button/Button'
 import { Link } from 'react-router-dom'
 import { FaTimes } from 'react-icons/fa'
+import { HashLink } from 'react-router-hash-link';
 
 const Dropdown = ({open , toggle}) => {
   return (
@@ -20,7 +21,9 @@ const Dropdown = ({open , toggle}) => {
           ))}
         </div>
         <div className='BtnWarp'>
-          <Button text={'Contact Us'} big={true} to='/contact'/>
+        <HashLink smooth to="/#contact"  className='link'>
+          <Button text={'Contact Us'} big={true}/>
+        </HashLink>
         </div>
       </div>
     </div>

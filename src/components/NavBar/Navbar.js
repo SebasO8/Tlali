@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import './Navbar.css'
 import {Link, useLocation} from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link';
 import {menuData} from '../../data/MenuData'
 import Button from '../Button/Button'
 import { IoMdCart } from 'react-icons/io';
@@ -50,9 +51,9 @@ const Navbar = ({toggle}) => {
           <Link to='/cart' className='link'><IoMdCart className='shoppingCart'/></Link>
           <span className='productCart'>{cart.length}</span>
         </div>
-        <Link to='/contact' className='link'>
+        <HashLink smooth to="/#contact"  className='link'>
           <Button text={'Contact Us'}/>
-        </Link>
+        </HashLink>
       </div>
     </nav>
   ) 

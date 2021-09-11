@@ -7,6 +7,7 @@ import {SliderData} from '../../data/SliderData'
 import InfoSection from './InfoSection/InfoSection';
 // data used in the information section
 import { InfoData } from '../../data/InfoData';
+import Contact from './Contact/Contact';
 
 const ContainerComponents = () => {
   return (
@@ -14,6 +15,7 @@ const ContainerComponents = () => {
       <SliderSection slides ={SliderData}/>
       <InfoSection {...InfoData} reverse={true}/>
       <InfoSection {...InfoData} reverse={false}/>
+      <Contact/>
     </>
   )
 }

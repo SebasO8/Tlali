@@ -4,6 +4,7 @@ import {Route} from "react-router-dom"
 import ContainerComponents from '../ContainerComponents/ContainerComponents'
 import Details from '../Details/Details'
 import Cart from '../Cart/Cart'
+import Contact from '../ContainerComponents/Contact/Contact'
 
 const Sections = () => {
 
@@ -13,6 +14,7 @@ const Sections = () => {
       <Route path="/products" component={Card} exact />
       <Route path="/product/:id" component={Details} exact />
       <Route path="/cart" component={Cart}  exact/>
+      <Route path="/contact" component={ContainerComponents} exact />
     </section>
   )
 }
