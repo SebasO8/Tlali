@@ -4,7 +4,7 @@ import './Contact.css'
 
 const Result =() =>{
   return(
-    <p>Your message has been successfully sent. i will contact you soon.</p>
+    <p>Su mensaje ha sido enviado satisfactoriamente. Pronto te contactaremos.</p>
   )
 }
 
@@ -26,34 +26,37 @@ function Contact() {
 
   setTimeout(() => {
     showResult(false);
-  }, 4000)
+  }, 6000)
 
   return (
-    <form action="" onSubmit={sendEmail} id='contact'>
-      <div className="formWord">
-        <h2>Say Hello!</h2>
-        <span>Full Name</span>
-        <br />
-        <input className="input100" type="text" name="fullName" required />
-        <br />
-        <span>Phone Number</span>
-        <br />
-        <input className="input100" type="text" name="phone" required />
-        <br />
-        <span>Enter Email</span>
-        <br />
-        <input className="input100" type="text" name="email" required />
-        <br />
-      </div>
-      <div className="formWord">
-        <span>Message</span>
-        <br />
-        <textarea name="message" required></textarea>
-        <br />
-        <button>SUBMIT</button>
-        <div className="row">{result ? <Result/>: null}</div>
-      </div>
-    </form>
+    <div id='contact'>
+      <form action="" onSubmit={sendEmail} >
+        <div className="formWord">
+          <h2>Contáctanos</h2>
+          <span>Nombre Completo</span>
+          <br />
+          <input className="input100" type="text" name="fullName" required />
+          <br />
+          <span>Número De Contacto</span>
+          <br />
+          <input className="input100" type="text" name="phone" required />
+          <br />
+          <span>Email</span>
+          <br />
+          <input className="input100" type="text" name="email" required />
+          <br />
+        </div>
+        <div className="formMessage">
+          <span>Mensaje</span>
+          <br />
+          {/* is a bigger input */}
+          <textarea name="message" required></textarea>
+          <br />
+          <button>Enviar</button>
+          <div className="row">{result ? <Result/>: null}</div>
+        </div>
+      </form>
+    </div>
   )
 }
 

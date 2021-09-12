@@ -4,7 +4,6 @@ import {Route} from "react-router-dom"
 import ContainerComponents from '../ContainerComponents/ContainerComponents'
 import Details from '../Details/Details'
 import Cart from '../Cart/Cart'
-import Contact from '../ContainerComponents/Contact/Contact'
 
 const Sections = () => {
 

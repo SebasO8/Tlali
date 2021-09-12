@@ -11,7 +11,7 @@ const Cart = () => {
   }, [])
     
   if(cart.length === 0){
-    return (<h2 style={{textAlign:"center", paddingTop:'80px'}}>Todavia no tienes productos</h2>)
+    return (<h2 style={{paddingTop:'80px', height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>Todavia no tienes productos</h2>)
   }else{
      return (
      <>
