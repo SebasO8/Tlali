@@ -1,3 +1,34 @@
+.container-products{
+  padding-top: 80px;
+}
+.text-products{
+  margin-left: 65px;
+}
+
+.buttonsContainer{
+  display: flex;
+}
+
+.buttonFilter{
+  margin-left: 65px;
+  white-space: nowrap;
+  outline: none;
+  border: none;
+  min-width: 100px;
+  max-width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 5px;
+  background:#000d1a;
+  padding: 14px 24px;
+  color: #fff;
+}
+
 .product{
   width: 100%;
   display: flex;
@@ -58,3 +89,21 @@
   justify-content: center;
   margin: 15px 0;
 }
+
+@media screen and (max-width:425px) {
+  .text-products{
+    margin-top: 10px;
+  }
+  
+  .buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .buttonFilter{
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+
+

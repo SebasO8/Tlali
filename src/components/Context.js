@@ -13,7 +13,8 @@ export class DataProvider extends Component {
               "src": "https://i.ibb.co/BfYbYRD/Mesa-de-trabajo-1.jpg",
               "description": "Caja con 2 suculentas, matera personalizada si lo desea, vino gato negro o champaña Jp Chenet, frasco con dulces de tu preferencia o por defecto bombones de chocolate y vela.",
               "price": 95000,
-              "count": 1
+              "count": 1,
+              "category":"suculentas1 incluyeDulces licor"
             },
             {
               "_id": "2",
@@ -21,7 +22,8 @@ export class DataProvider extends Component {
               "src": "https://i.ibb.co/mSh0vf6/Mesa-de-trabajo-2.jpg",
               "description": "Caja con 1 suculenta, matera personalizada si lo desea, vino gato negro o champaña Jp Chenet, frasco con dulces de tu preferencia o por defecto bombones de chocolate y vela.",
               "price": 85000,
-              "count": 1
+              "count": 1,
+              "category":"suculentas2 incluyeDulces licor"
             },
             {
               "_id": "3",
@@ -29,7 +31,8 @@ export class DataProvider extends Component {
               "src": "https://i.ibb.co/bLSx0Yv/Mesa-de-trabajo-3.jpg",
               "description": "Caja con 3 suculentas, matera perzonalizada si lo deseas.",
               "price": 70000,
-              "count": 1
+              "count": 1,
+              "category":"suculentas1"
             },
             {
               "_id": "4",
@@ -37,7 +40,8 @@ export class DataProvider extends Component {
               "src": "https://i.ibb.co/wRs7nVJ/Mesa-de-trabajo-4.jpg",
               "description": "Caja con oasis de vidrio y tres suculentas.",
               "price": 50000,
-              "count": 1
+              "count": 1,
+              "category":"suculentas2"
             },
             {
               "_id": "5",
@@ -45,7 +49,8 @@ export class DataProvider extends Component {
               "src": "https://i.ibb.co/Wg72M2Y/Mesa-de-trabajo-5.jpg",
               "description": "Caja sencilla con suculenta y matera perzonalizada si lo deseas.",
               "price": 35000,
-              "count": 1
+              "count": 1,
+              "category":"suculentas2"
             },
             {
                 "_id": "6",
@@ -53,7 +58,8 @@ export class DataProvider extends Component {
                 "src": "https://images.unsplash.com/photo-1547517023-7ca0c162f816?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
                 "description": "Caja con 3 suculenta, matera perzonalizada champaña Jp Chenet y frasco con dulces de tu preferencia o por defecto bombones de chocolate. ",
                 "price": 130000,
-                "count": 1
+                "count": 1,
+                "category":"suculentas1 incluyeDulces licor"
               }, 
               {
                 "_id": "7",
@@ -61,7 +67,8 @@ export class DataProvider extends Component {
                 "src": "https://images.unsplash.com/photo-1623225178244-e5d61f4b8010?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80",
                 "description": "Terrario con dos suculentas, muñeco de tu preferencia, frasco con dulces de tu preferencia o por defecto bombones de chocolate y vela.",
                 "price": 65000,
-                "count": 1
+                "count": 1,
+                "category":"suculentas1 incluyeDulces"
               }, 
               {
                 "_id": "8",
@@ -69,7 +76,8 @@ export class DataProvider extends Component {
                 "src": "https://i.ibb.co/9rhYJqK/Whats-App-Image-2021-09-12-at-11-23-16.jpg",
                 "description": "Caja con 2 suculentas y matera perzonalizada si lo deseas, 3 whisky Chivas Regal 700 Ml, 2 frascos con dulces de tu preferencia o por defecto mani.",
                 "price": 300000,
-                "count": 1
+                "count": 1,
+                "category":"suculentas1 incluyeDulces licor"
               }, 
               {
                 "_id": "9",
@@ -77,7 +85,8 @@ export class DataProvider extends Component {
                 "src": "https://i.ibb.co/DWBt3X9/producto-9.jpg",
                 "description": "Caja con 2 suculentas, matera personalizada si lo desea, frasco con dulces de tu preferencia y un botilito.",
                 "price": 115000,
-                "count": 1
+                "count": 1,
+                "category":"suculentas1 incluyeDulces"
               }, 
               {
                 "_id": "10",
@@ -85,7 +94,8 @@ export class DataProvider extends Component {
                 "src": "https://images.unsplash.com/photo-1508021371391-516c9dd8fcfd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=638&q=80",
                 "description": "Caja sencilla con cactus y matera perzonalizada si lo deseas",
                 "price": 45000,
-                "count": 1
+                "count": 1,
+                "category":"suculentas2 suculentas1"
               },       
         ],
         cart: [],

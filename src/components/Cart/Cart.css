@@ -41,7 +41,7 @@ section .cart .delete{
 }
 .total a{
   text-decoration: none;
-  background: #333;
+  background: transparent;
   color: white;
   text-transform: uppercase;
   letter-spacing: 2px;

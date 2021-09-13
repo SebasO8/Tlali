@@ -32,7 +32,7 @@ function Contact() {
     <div id='contact'>
       <form action="" onSubmit={sendEmail} >
         <div className="formWord">
-          <h2>prueba</h2>
+          <h2>Contacto</h2>
           <span>Nombre Completo</span>
           <br />
           <input className="input100" type="text" name="fullName" required />

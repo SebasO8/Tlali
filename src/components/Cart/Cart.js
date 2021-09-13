@@ -1,18 +1,17 @@
 import React, { useContext} from 'react'
 import {DataContext} from '../Context'
-import {Link} from 'react-router-dom'
 import './Cart.css'
-// import Button from '../Button/Button'
+import Button from '../Button/Button'
+
 
 const Cart = () => {
   const { cart,increase,reduction,removeProduct,total} = useContext(DataContext);
-
-  // useEffect(() => {
-  //   getTotal()
-  // }, [])
   
 
-  // let wh = JSON.stringify(cart)
+  let whTi = cart.map(item=> item.title)
+  let whPr = total 
+
+  
     
   if(cart.length === 0){
     return (<h2 style={{paddingTop:'80px', height:'100vh', display:'flex', alignItems:'center', justifyContent:'center',textAlign: 'center'}}>Todavia no tienes productos</h2>)
@@ -42,10 +41,10 @@ const Cart = () => {
       }
       <div className="total">
       <h3>Total: ${total}</h3>
-      <Link to="/payment" className='boton'>Payment</Link>
-      {/* <a  href={` https://api.whatsapp.com/send?phone=573196848051&text= Tú orden es ${wh}`}>
+      {/* <Link to="/payment" className='boton'>Payment</Link> */}
+      <a  href={` https://api.whatsapp.com/send?phone=573196848051&text= Tú orden es ${whTi}, con un total de ${whPr}`}>
         <Button text={'Enviar orden'} big={true}/>
-      </a> */}
+      </a>
       </div>
     </>
     )
