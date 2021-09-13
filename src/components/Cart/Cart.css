@@ -27,7 +27,7 @@ section .cart .delete{
   font-weight: 900;
 }
 .total{
-  width: 100%;
+  width: 93%;
   height: 50px;
   display: flex;
   margin-top: 100px;
@@ -50,4 +50,9 @@ section .cart .delete{
 .total h3{
   margin-right: 50px;
   color: crimson;
+}
+@media screen and (max-width: 1024px) {
+  .total{
+    width: 100%;
+  }
 }

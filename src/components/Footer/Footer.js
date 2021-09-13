@@ -2,8 +2,11 @@ import React from 'react'
 import './Footer.css'
 import { SiInstagram } from 'react-icons/si';
 import { SiWhatsapp } from 'react-icons/si';
+import { useParams } from 'react-router-dom';
 
 const Footer = () => {
+  let params = useParams().id;
+  console.log(params)
   return (
     <div className='footerContainer'>
       <div className='footer'>
@@ -15,8 +18,9 @@ const Footer = () => {
           <a href="https://www.instagram.com/tlali_co/?utm_medium=copy_link">
             <SiInstagram className='icons ins'/>
           </a>
-          
-          <SiWhatsapp className='icons'/>
+          <a href="https://wa.link/zy4lx6">
+            <SiWhatsapp className='icons'/>
+          </a>
         </div>
       </div>
     </div>

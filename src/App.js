@@ -9,6 +9,7 @@ import Dropdown from './components/Dropdown/Dropdown';
 import Sections from './components/Sections/Sections';
 // component with all the information and functions for the operation of the shopping cart
 import { DataProvider } from './components/Context';
+//footer component 
 import Footer from './components/Footer/Footer';
 
 
@@ -29,7 +30,9 @@ function App() {
         <NavBar toggle={toggle}  />
         {/* The drop-down component is passed the 'isOpen' property, which will be the component's state, and the toggle property, which will be the 'toggle' arrow function, will also be passed to it */}
         <Dropdown open={isOpen} toggle={toggle} />
+        {/* the component where are the routes */}
         <Sections/>
+        {/* the component where the footer is */}
         <Footer/>
       </DataProvider>
 

@@ -1,8 +1,9 @@
 import React, {useEffect, useState, useRef,} from 'react'
 import styled, { css } from 'styled-components/macro'
 import  Button  from '../Button/Button'
-import { IoMdArrowRoundForward } from 'react-icons/io'
+// import { IoMdArrowRoundForward } from 'react-icons/io'
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5'
+import { Link } from 'react-router-dom'
 
 
 const HeroSection = styled.div`
@@ -52,6 +53,19 @@ const HeroSlider = styled.div`
       rgba(0,0,0,0.6) 100%)
   }
 `;
+
+const HeroImageZ = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  background-color:#000;
+  opacity: 0.6;
+`;
+
 const HeroImage = styled.img`
   position: absolute;
   top: 0;
@@ -59,7 +73,7 @@ const HeroImage = styled.img`
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-
+  z-index: -1;
 `;
 const HeroContent = styled.div`
   position: relative;
@@ -71,12 +85,17 @@ const HeroContent = styled.div`
   color: #fff;
 
   h1{
-    font-size: clamp(1rem, 8vw, 10rem);
+    font-size: clamp(1rem, 8vw, 4.7rem);
     font-weight: 400;
     text-transform: uppercase;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
     text-align: left;
     margin-bottom: 0.8rem;
+    // color: #F3A853;
+    // color:#5EF1CF;
+    // color:#b1c3b0;
+    color:#fff;
+    ;
   }
 
   p{
@@ -85,9 +104,13 @@ const HeroContent = styled.div`
   }
 `;
 
-const Arrow = styled(IoMdArrowRoundForward)`
-  margin-left: 0.5rem;
+const Linkstyle =styled(Link)`
+  text-decoration: none;
 `;
+
+// const Arrow = styled(IoMdArrowRoundForward)`
+//   margin-left: 0.5rem;
+// `;
 
 const SliderButtons = styled.div`
   position: absolute;
@@ -175,21 +198,28 @@ const Hero = ({slides}) => {
             <HeroSlide key={index}>
               {index === current && (
                 <HeroSlider>
-                <HeroImage src={slide.image} alt={slide.alt}/>
+                <HeroImageZ></HeroImageZ>
+                  <HeroImage src={slide.image} alt={slide.alt}/>
                 <HeroContent>
                   <h1>{slide.title}</h1>
-                  <p>{slide.price}</p>
-                  <Button 
-                    to={slide.path} 
-                    primary='true' 
-                    text={'compra aqui'}
+                  {slide.path ? <Linkstyle to={slide.path} className='link'>
+                    <Button 
+                      text={slide.label}
+                      css={`
+                        max-width: 160px
+                      `}
+                    />
+                  </Linkstyle>
+                  :
+                  <a href={slide.href} className='link'>
+                    <Button 
+                    text={slide.label}
                     css={`
                       max-width: 160px
                     `}
-                  >
-                    {slide.label}
-                    <Arrow/>
-                  </Button>
+                  />
+                  </a> 
+                  }
                 </HeroContent>
               </HeroSlider>
               ) }

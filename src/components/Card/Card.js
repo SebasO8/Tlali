@@ -20,7 +20,6 @@ const Card = () => {
                 <Link to={`/product/${product._id}`}>{product.title}</Link>
               </h3>
               <span>${product.price}</span>
-              <p>{product.description}</p>
               {/* <Button></Button>
               <button onClick={()=> addCart(product._id)}>Add to cart</button> */}
               <Link to="/cart" className="cartlink" onClick={() => addCart(product._id)}>

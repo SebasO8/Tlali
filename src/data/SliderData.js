@@ -1,40 +1,23 @@
-import ImageOne from '../images/plant-1.jpg'
-import ImageTwo from '../images/plant-2.jpg'
-import ImageThree from '../images/plant-3.jpg'
-import ImageFour from '../images/plant-4.jpg'
-
 export const SliderData = [
   {
     title: 'somos Tlali',
-    price: '$95.000',
-    path: '/homes',
-    label: 'View home',
-    image: ImageOne,
-    alt: 'House'
+    image: 'https://i.ibb.co/jWkTgZp/Whats-App-Image-2021-09-12-at-11-24-26.jpg',
+    alt: 'Suculentas',
+    label: 'Ir a nuestro instagram',
+    href: "https://www.instagram.com/tlali_co/?utm_medium=copy_link"
   },
   {
-    title: 'Regalo 2',
-    price: '$4,280',
-    path: '/homes',
-    label: 'View home',
-    image: ImageTwo,
-    alt: 'House'
+    title: 'Nuestros productos',
+    label: 'Ir a productos',
+    image: 'https://i.ibb.co/9rhYJqK/Whats-App-Image-2021-09-12-at-11-23-16.jpg',
+    alt: 'Producto Tlali',
+    path: '/product'
   },
   {
-    title: 'Regalo 3',
-    price: '$4.000',
-    path: '/homes',
-    label: 'View home',
-    image: ImageThree,
-    alt: 'House'
-  },
-  {
-    title: 'Regalo 4',
-    price: '$4,300.000',
-    path: '/homes',
-    label: 'View home',
-    image: ImageFour,
-    alt: 'House'
-  },
-  
+    title: 'Producto destacado',
+    path: '/product/5',
+    label: 'Ir al regalo',
+    image: 'https://i.ibb.co/264HxH4/producto-destacado.jpg',
+    alt: 'Producto Tlali'
+  },  
 ];
