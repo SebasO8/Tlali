@@ -192,12 +192,15 @@ export class DataProvider extends Component {
     };
     // every time the page is refreshed the following is executed
     componentDidUpdate(){
+        // convert cart state and total state to JSON text string and save it to localStorage
+
         localStorage.setItem('dataCart', JSON.stringify(this.state.cart))
         localStorage.setItem('dataTotal', JSON.stringify(this.state.total))
     };
-
+    // every time the page is displayed the following is executed
     componentDidMount(){
         const dataCart = JSON.parse(localStorage.getItem('dataCart'));
+        // console.log(dataCart)
         if(dataCart !== null){
             this.setState({cart: dataCart});
         }

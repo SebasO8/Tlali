@@ -2,11 +2,8 @@ import React from 'react'
 import './Footer.css'
 import { SiInstagram } from 'react-icons/si';
 import { SiWhatsapp } from 'react-icons/si';
-import { useParams } from 'react-router-dom';
 
 const Footer = () => {
-  let params = useParams().id;
-  console.log(params)
   return (
     <div className='footerContainer'>
       <div className='footer'>

@@ -56,3 +56,24 @@ section .cart .delete{
     width: 100%;
   }
 }
+@media screen and (max-width:425px) {
+  .total h3{
+    margin-right: 0;
+    
+  }
+}
+@media screen and (max-width:375px) {
+  .total h3{
+    margin-left: 25px;
+    
+  }
+}
+@media screen and (max-width:320px) {
+  .total a{
+    padding: 10px 15px;
+  }
+  .total h3{
+    margin-left: 50px;
+    
+  }
+}

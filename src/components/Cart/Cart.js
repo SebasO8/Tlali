@@ -1,14 +1,23 @@
-import React, { useContext} from 'react'
+import React, { useContext, useEffect} from 'react'
 import {DataContext} from '../Context'
 import './Cart.css'
 import Button from '../Button/Button'
 
 
 const Cart = () => {
-  const { cart,increase,reduction,removeProduct,total} = useContext(DataContext);
+  const { cart,increase,reduction,removeProduct,total, getTotal} = useContext(DataContext);
+  const CartLength = cart.length > 0;
+  
+   
+
+  useEffect(() => {
+    getTotal()
+  }, [CartLength, getTotal])
   
 
-  let whTi = cart.map(item=> item.title)
+  let whTi = cart.map(item=>( [item.count, item.title]))
+  console.log(whTi)
+  
   let whPr = total 
 
   

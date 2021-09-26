@@ -134,7 +134,7 @@ const arrowButtons = css`
 
   &:hover {
     background: #cd853f;
-    transfrom: scale(1.05);
+    transform: scale(1.05);
   }
 `;
 
